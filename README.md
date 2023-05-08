@@ -59,4 +59,20 @@
 
 # 文件介绍
 
+binance_pro_trade_server 文件夹，服务器需要的代码程序
+
+dataWebsocket.cpp websocket服务器，C++
+
+g++ dataWebsocket.cpp -o dataWebsocket.out -lboost_system //编译
+
+nohup ./dataWebsocket.out >/dev/null & //运行
+
+tickToWs 派发tick数据到websocket服务器
+
+oneMinKlineToWs 派发一分钟K线数据到websocket服务器，如交易的代币多建议多开几个服务器同时运行即可，该部分数据作用为修正
+
+otherKlineToWs 派发其他时间段的数据到websocket服务器，由于其他时间段的修正需求较小，所以整理到一个服务器中完成
+
+由于本人习惯，只做1分钟/15分钟/4小时/1天/1周/1月的时间间隔K线数据，以上数据服务器还可以开拓出更多时间间隔，包括三分钟...五分钟...等等，只需要自行修改即可实现扩展
+
 binance_f.rar 币安的接口包，来源为官网旧版程序，进行了一些改造
