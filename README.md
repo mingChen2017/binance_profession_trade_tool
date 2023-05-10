@@ -8,7 +8,7 @@
 
 测试地址：
 
-http://47.74.49.8/#/Real
+http://www.zuibite.pro/#/Real
 
 账号 maker_quant
 
