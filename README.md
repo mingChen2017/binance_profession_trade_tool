@@ -83,6 +83,8 @@ trade_symbol.sql trade_symbol为当前整个系统支持的交易币种
 
 updateTradeSymbol.py 更新当前系统支持的交易币种，每次执行都会清空表格
 
+binance_pro_trade_react_client 压缩包中的real.js文件为该项目前端文件
+
 binance_f.rar 币安的接口包，来源为官网旧版程序，进行了一些改造
 
 # 系统搭建建议
