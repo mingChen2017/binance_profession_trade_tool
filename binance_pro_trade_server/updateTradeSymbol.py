@@ -25,11 +25,6 @@ from aliyunsdkecs.request.v20140526.StopInstancesRequest import StopInstancesReq
 
 
 
-OSS_AUTH = oss2.Auth('LTAIX5RBT5EZvfNH', 'TMCklwEQ59e8IEuYAFAxdTlNfAPaTL')
-OSS_BUCKET = oss2.Bucket(OSS_AUTH, 'http://oss-cn-hongkong-internal.aliyuncs.com', 'zuibite-api')
-
-
-
 config={
     'host':'rm-6wekl1587o9cr021u.mysql.japan.rds.aliyuncs.com',
     'port':3306,
